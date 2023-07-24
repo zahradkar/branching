@@ -3,7 +3,6 @@ import java.util.Map;
 
 public class IsAnagram {
     public static void main(String[] args) {
-        // System.err.println("skuska");
         System.out.println(isAnagram("anagramm", "marganaa"));
     }
 
@@ -19,7 +18,7 @@ public class IsAnagram {
                 mapA.put(a.charAt(i), (short) (mapA.get(a.charAt(i)) + 1));
             else
                 mapA.put(a.charAt(i), (short) 1);
-
+        // TODO this program seems to be incomplete
         for (short i : mapA.values())
             System.out.println(i);
         return false;

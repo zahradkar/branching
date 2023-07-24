@@ -10,11 +10,11 @@ public class HighestLowest {
         int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;
 
-        for (short i = 0; i < temp.length; i++) {
-            if (Integer.parseInt(temp[i]) > max)
-                max = Integer.parseInt(temp[i]);
-            if (Integer.parseInt(temp[i]) < min)
-                min = Integer.parseInt(temp[i]);
+        for (String i: temp) {
+            if (Integer.parseInt(i) > max)
+                max = Integer.parseInt(i);
+            if (Integer.parseInt(i) < min)
+                min = Integer.parseInt(i);
         }
 
         return max + " " + min;

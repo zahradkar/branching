@@ -14,13 +14,10 @@ public class Wally {
         for (int i = 0; i <= input.length() - 5; i++)
             if (input.charAt(i) == 'W')
                 if (i == 0) {
-                    if (i + 5 <= input.length() && input.substring(i, i + 5).equals("Wally"))
-                        if (i + 5 <= input.length())
-                            return i;
-                        else if (i + 6 < input.length() && input.charAt(i + 6) > 'a' && input.charAt(i + 6) < 'z')
-                            return i;
+                    if (i + 5 <= input.length() && input.startsWith("Wally", i))
+                        return i;
                 } else if (input.charAt(i - 1) == ' ')
-                    if (i + 5 <= input.length() && input.substring(i, i + 5).equals("Wally"))
+                    if (i + 5 <= input.length() && input.startsWith("Wally", i))
                         if (i+6>=input.length())
                             return i;
                     else
