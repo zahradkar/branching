@@ -5,7 +5,7 @@ public class SortString {
         System.out.println(order(""));
     }
 
-    private static String order(String words) {
+    public static String order(String words) {
         if (words.equals(""))
             return "";
         String[] temp = words.split(" ");
