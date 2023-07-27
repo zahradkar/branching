@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class SizesOfObjects {
+public class SizeVsLength {
     public static void main(String[] args) {
         String string = "abcdefghijklmnopqrstuvwxyz";
         String[] array = new String[]{"abcdefghijkl", "mnopqrstuvwxyz"};
