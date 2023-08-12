@@ -6,7 +6,7 @@ public class SortString {
     }
 
     public static String order(String words) {
-        if (words.equals(""))
+        if (words.isEmpty())
             return "";
         String[] temp = words.split(" ");
 

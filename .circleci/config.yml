@@ -3,16 +3,18 @@ version: 2.1
 
 jobs:
   # Job one with a unique name
-  say_hello:
+  build:
     docker:
-      - image: cimg/base:2022.05
+      - image: circleci/jdk8
     steps:
-      - run: echo "Say hello to YAML!"
+      - checkout
+      - run: javac SortString.java
   # Job two with a unique name
   say_goodbye:
     docker:
-      - image: cimg/base:2022.05
+      - image: circleci/jdk8
     steps:
+      - checkout
       - run: echo "Say goodbye to YAML!"
 
 workflows:
