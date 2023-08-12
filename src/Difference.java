@@ -8,13 +8,13 @@ public class Difference{
 		System.out.println(difference(Arrays.asList(1,2), Arrays.asList(3,4)));
 		System.out.println(difference(Arrays.asList(), Arrays.asList()));
 	}
-	
+
 	private static List<Integer> difference(List<Integer> list1, List<Integer> list2){
 		List<Integer> result = new ArrayList<>();
 		for (Integer integer : list1)
 			if (!list2.contains(integer))
 				result.add(integer);
-			
+
 		return result;
 	}
 }
