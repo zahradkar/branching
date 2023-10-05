@@ -1,0 +1,30 @@
+#table {
+    border-collapse: collapse;
+    background-color: #427fef; /* Background color for the table header */
+}
+
+th, td {
+    border-top: 1px solid #c4dcf3;
+    border-bottom: 1px solid #c4dcf3;
+    text-align: left;
+    padding: 8px;
+}
+
+/* Define background colors for odd and even rows */
+tr:nth-child(odd) {
+    background-color: #eef7ff; /* Background color for odd rows */
+}
+
+tr:nth-child(even) {
+    background-color: white; /* Background color for even rows */
+}
+
+/* Remove right border from the last cell in each row */
+td:last-child {
+    border-right: none;
+}
+
+th {
+    background-color: #427fef; /* Background color for the table header */
+    color: white;
+}

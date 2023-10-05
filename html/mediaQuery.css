@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    padding: 1rem;
+}
+
+.one {
+    background-color: gold;
+}
+
+.two {
+    background-color: dodgerblue;
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+    .container {
+        flex-direction: row;
+    }
+}

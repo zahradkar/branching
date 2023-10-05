@@ -1,0 +1,26 @@
+body {
+    background-image: url("images/unsplash.jpg");
+    background-size: cover;
+    color: lightgrey;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin-top: 40vh;
+    font-size: 3rem;
+    font-weight: 900;
+    text-shadow: 2px 2px black;
+    word-spacing: 10px;
+}
+
+span {
+    display: inline-block;
+    margin-top: 5vh;
+    letter-spacing: 2px;
+    font-weight: 300;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 1.2rem;
+    padding: 0.8rem;
+}

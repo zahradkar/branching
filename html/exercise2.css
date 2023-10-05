@@ -1,0 +1,23 @@
+div {
+    display: grid;
+    grid-template: repeat(10, 100px)/repeat(1, 100px);
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 768px){
+    div {
+        grid-template: repeat(5, 100px)/repeat(2, 100px);
+        column-gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    div{
+        grid-template: repeat(3, 100px)/repeat(4, 100px);
+
+    }
+}

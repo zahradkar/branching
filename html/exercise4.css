@@ -1,0 +1,27 @@
+body {
+    display: grid;
+    grid-template: 100px auto 100px / 200px 100fr;
+    gap: 1rem;
+    grid-template-areas:
+        "header header"
+        "main sidebar"
+        "footer footer";
+    height: 100vh;
+    font-size: 2rem;
+}
+
+.content {
+    background-color: gold;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    /*text-justify: center;*/
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    /*margin-top: auto;*/
+}

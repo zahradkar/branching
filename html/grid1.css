@@ -1,0 +1,21 @@
+.container {
+    display: grid;
+    /* 3x2 */
+    /*grid-template-rows: 100px 100px 100px;*/
+    /*grid-template-columns: 100px 100px;*/
+    /*grid-template-columns: repeat(2, 100px); the same */
+
+    /*grid-template: repeat(3, 100px) / repeat(2, 100px); !*whole setting with one command*!*/
+    grid-template: 100px auto 100px / 30fr 70fr;
+    gap: 10px;
+    border: 3px solid lightgrey;
+    justify-items: stretch;
+    align-items: stretch;
+    height: 100vh;
+}
+
+.box {
+    /*width: 5rem;
+    height: 5rem;*/
+    background-color: gold;
+}

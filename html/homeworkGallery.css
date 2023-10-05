@@ -1,0 +1,28 @@
+#container {
+    display: grid;
+    gap: 0.4rem;
+    justify-content: center;
+    grid-template: repeat(9, auto) / repeat(1, 150px);
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    #container {
+        grid-template: repeat(5, auto) / repeat(2, 250px);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #container {
+        grid-template: repeat(4, auto) / repeat(3, 250px);
+    }
+
+    #large {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+}
