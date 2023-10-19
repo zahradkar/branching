@@ -1,0 +1,40 @@
+body {
+    font-family: Calibri, serif;
+}
+
+.wrap {
+    border: 1px solid red;
+    border-radius: 1.5rem;
+    padding: 0.5rem 0.4rem;
+    display: flex;
+}
+
+.wrap:hover {
+    transition: border 1.5s;
+    /* transform: border 1.5s;*/
+    /* this does not work */
+}
+
+input {
+    border: 0;
+    flex-grow: 1;
+    line-height: 1.5rem;
+}
+
+button {
+    border-radius: 1rem;
+    border: 0;
+    outline: 0;
+    background-color: aquamarine;
+
+    /*: cursor;*/
+}
+
+button:hover {
+    background-color: #98f6d7;
+}
+
+input:focus {
+    outline: 0;
+    border: 0;
+}

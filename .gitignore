@@ -2,5 +2,6 @@
 .idea/.gitignore
 branching.iml
 README.md
-tr1/.terraform
-tr1/*terraform*
+terra1/.terraform
+terra1/*terraform*
+out
